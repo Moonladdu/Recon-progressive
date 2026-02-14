@@ -1,0 +1,9 @@
+profiles:
+  basic:
+    args: []
+    desc: "Standard WHOIS lookup"
+    recommendation: "Default"
+  verbose:
+    args: []
+    desc: "Verbose WHOIS output"
+    recommendation: "Full details"

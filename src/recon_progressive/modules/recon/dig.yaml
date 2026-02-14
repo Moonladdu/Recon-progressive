@@ -1,0 +1,21 @@
+profiles:
+  a:
+    args: ["A"]
+    desc: "IPv4 addresses"
+    recommendation: "Basic"
+  mx:
+    args: ["MX"]
+    desc: "Mail servers"
+    recommendation: "Email"
+  ns:
+    args: ["NS"]
+    desc: "Name servers"
+    recommendation: "DNS infra"
+  txt:
+    args: ["TXT"]
+    desc: "TXT records"
+    recommendation: "Verification"
+  any:
+    args: ["ANY"]
+    desc: "All records"
+    recommendation: "Full"

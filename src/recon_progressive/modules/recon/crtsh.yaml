@@ -1,0 +1,9 @@
+profiles:
+  basic:
+    args: []
+    desc: "Fetch unique subdomains from CT logs"
+    recommendation: "Default; fast and concise"
+  verbose:
+    args: []
+    desc: "Full certificate metadata + raw JSON preview"
+    recommendation: "Debugging / manual inspection"

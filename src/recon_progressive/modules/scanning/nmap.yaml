@@ -1,0 +1,37 @@
+profiles:
+  basic:
+    args: ["-sS", "-p", "22,80,443", "-T4", "-v"]
+    desc: "Quick SYN scan of common ports"
+    recommendation: "Fast service discovery"
+  stealth:
+    args: ["-sS", "-p", "1-1000", "-T4", "-v"]
+    desc: "Stealth scan of first 1000 ports"
+    recommendation: "Balance speed and coverage"
+  connect:
+    args: ["-sT", "-p", "22,80,443", "-T4", "-v"]
+    desc: "TCP connect scan (no root needed)"
+    recommendation: "When root unavailable"
+  version:
+    args: ["-sS", "-p-", "-sV", "-T4"]
+    desc: "Full port scan with version detection"
+    recommendation: "Detailed service enumeration"
+  os:
+    args: ["-sS", "-p", "22,80,443", "-O", "-T4", "-v"]
+    desc: "Add OS detection to basic scan"
+    recommendation: "Identify target OS"
+  script:
+    args: ["-sS", "-p", "22,80,443", "-sC", "-T4", "-v"]
+    desc: "Run default NSE scripts"
+    recommendation: "Additional info (banners, vulns)"
+  full:
+    args: ["-sS", "-p-", "-sV", "-sC", "-O", "-T4"]
+    desc: "Comprehensive scan (all ports, versions, scripts, OS)"
+    recommendation: "Maximum data (slow)"
+  custom:
+    args: []
+    desc: "Enter custom Nmap arguments interactively (type 'help' for options)"
+    recommendation: "Full flexibility"
+  manage:
+    args: ["manage"]
+    desc: "Manage custom profiles (delete, modify)"
+    recommendation: "Profile maintenance"
