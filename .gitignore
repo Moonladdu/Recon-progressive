@@ -26,3 +26,7 @@ recon-output/
 # OS
 .DS_Store
 Thumbs.db
+
+# Backup files
+*.bak
+*~

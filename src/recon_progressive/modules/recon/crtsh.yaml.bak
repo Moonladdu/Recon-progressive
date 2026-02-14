@@ -1,9 +1,0 @@
-profiles:
-  basic:
-    args: ["-sS", "-p", "22,80,443", "-T4", "-v"]
-    desc: "Quick SYN scan of common ports"
-    recommendation: "Fast service discovery"
-  verbose:
-    args: ["-sS", "-p-", "-sV", "-T4"]
-    desc: "Full port scan with version detection"
-    recommendation: "Detailed service enumeration"
